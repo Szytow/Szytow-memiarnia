@@ -24,7 +24,7 @@
   </div>
 
   <div class="form-group">
-    <%= f.label :obecne hasło %> <br />
+    <%= f.label :obecne_hasło %> <br />
     <%= f.password_field :current_password, autocomplete: "off", class: 'form-control' %>
   </div>
 
@@ -35,7 +35,7 @@
 
 <h3>Usuń konto</h3>
 
-<p>Unhappy? <%= button_to "Usuń konto", registration_path(resource_name), data: { confirm: "Na pewno?" }, method: :delete , class: 'btn btn-danger'%></p>
+<p><%= button_to "Usuń konto", registration_path(resource_name), data: { confirm: "Na pewno?" }, method: :delete , class: 'btn btn-danger'%></p>
   </div>
     <div class="panel-footer"><%= link_to "Powrót", :back , class: 'btn btn-info'%></div>
   </div>
